@@ -1,6 +1,6 @@
 {
   "name": "frontend-mentoring",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "https://github.com/pedrojsn96/frontend-mentoring.git",
   "author": "pedrojsn96",
@@ -8,18 +8,23 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "babel-loader": "^8.1.0",
     "commitizen": "^4.1.2",
     "css-loader": "^3.6.0",
     "cz-conventional-changelog": "3.2.0",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
+    "standard-version": "^8.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
