@@ -8,8 +8,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "commit": "npx git-cz",
-    "release": "standard-version"
+    "commit": "git-cz",
+    "release": "standard-version",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -18,12 +19,16 @@
     "@babel/preset-react": "^7.10.1",
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.3",
+    "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "commitizen": "^4.1.2",
     "css-loader": "^3.6.0",
     "cz-conventional-changelog": "3.2.0",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
+    "jest": "^26.1.0",
     "standard-version": "^8.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
@@ -33,15 +38,5 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
